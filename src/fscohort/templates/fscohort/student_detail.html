@@ -1,0 +1,11 @@
+{% extends 'fscohort/base.html' %}
+
+
+{% block content %}
+<h1>Student Detail</h1>
+{{student.number}} - {{ student.first_name }} {{ student.last_name }}
+<a href="{% url 'delete' student.id %}">
+    <button>Delete</button>
+</a>
+
+{% endblock %}
