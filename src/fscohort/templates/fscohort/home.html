@@ -1,27 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'fscohort/base.html' %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+{% block title %}
+home page
+{% endblock title %}
 
-<body>
-    <form action="." method="GET">
-        {{ student }}
-    </form>
-    <h1>Hello, this is home page.</h1>
-    {{ title|safe }} <br>
-    {{ dict_1 }} <br>
-    {% for i in my_list %}
-    {% if i == 3 %}
-    <p>Bu sayı 3 e eşit</p>
-    {% else %}
-    {{ i }} <br>
-    {% endif %}
-    {% endfor %}
-    {{ cat }}
-</body>
-
-</html>
+{% block content %}
+<h1>Hello, this is home page.</h1>
+{% endblock %}
