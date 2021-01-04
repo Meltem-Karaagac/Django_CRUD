@@ -6,4 +6,7 @@ home page
 
 {% block content %}
 <h1>Hello, this is home page.</h1>
+<a href="{% url 'add' %}"><button>Add Student</button></a>
+<a href="{% url 'list' %}"><button>Student List</button></a>
+
 {% endblock %}
